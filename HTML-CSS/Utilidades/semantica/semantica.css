@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+p q {
+    color: gold;
+    font-style: italic;
+}

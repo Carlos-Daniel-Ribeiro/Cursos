@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="form_imput.css">
+    </head>
+
+    <body>
+
+        <!-- Para criar uma formulário, usa-se a tag "form", "action" é para onde 
+        esse formulario sera enviado,"method" e como sera enviado, se for "GET" vai aparecer
+        na URL e se for "POST" não vai aparecer. -->
+        <form action="" method=""></form>
+
+        <h1>Area de cadastro</h1>
+
+        <form action="" method="GET">
+
+            <!-- Para criar um zona de texto usa-se "input type="text"
+            e a tag "name" coloca uma identificação no elemento.-->
+            Nome do usuário :
+            <input type="text" name="usuario"><br>
+
+            <!-- Para criar um zona de texto para senha usa-se "input type="password"" -->
+            Digite sua senha :
+            <input type="password" name="senha"><br>
+
+            <!-- Para criar uma check list usa-se "input type="checkbox"" -->
+            Marque se concordar :
+            <input type="checkbox" name="contrato"><br>
+
+            <!-- Para criar uma zona de marcação de alternativa usa-se "input type="radio" name"
+            para que funcione em apenas uma alternativa, presisa-se que os 2 ou mais checks
+            tenham o mesmo "name"-->
+            Escolha seu sexo : <br> <br>
+            <input type="radio" name="sexo">masculino<br>
+            <input type="radio" name="sexo">feminino<br>
+
+            <!-- Para criar um botão de envio usa-se "input type="submit"" -->
+            <input type="submit" value="Concluir cadastro"><br>
+
+            <!-- Cria uma paleta de cores -->
+            Paleta de cores : <br>
+            <input type="color"><br>
+
+            <!-- Cria um campo de data (calendario) -->
+            Digite sua data de nascimento : <br>
+            <input type="date"><br>
+
+            <!-- Cria um campo de data com horario (calendario) -->
+            Digite sua data de nascimento com hora : <br>
+            <input type="datetime-local"><br>
+
+            <!-- Cria um campo de data com mês (calendario) -->
+            Digite sua data de nascimento : <br>
+            <input type="month"><br>
+
+            <!-- Cria um campo de horário -->
+            Digite o horario da prova : <br>
+            <input type="time"><br>
+
+            <!-- Para criar um zona de texto para email usa-se "input type="email"" -->
+            Digite seu email : <br>
+            <input type="email" name="email"><br>
+
+            <!-- Cria um campo que aceita apenas numeros -->
+            Digite seu numero de casa : <br>
+            <input type="number"><br>
+
+            <!-- Cria um campo que aceita apenas telefone -->
+            Digite seu telefone : <br>
+            <input type="tel"><br>
+
+            <!-- Cria um campo que aceita apenas URL -->
+            Copie a URL requerida : <br>
+            <input type="url"><br>
+
+            <!-- A tag "file" cria uma zona de envio de arquivo, coloque a tag "accept"
+            para colocar um tipo de arquivo obrigatorio, sempre quando um arquivo for enviado pelo
+            formulário deve-se colocar a tag "enctype" no "form".-->
+            Coloque uma foto : <br>
+            <input type="file" name="foto" accept="image/*"> 
+
+        </form>
+
+        <!---------------------------------------------------------------------------->
+
+        <!-- Cria um input que o usuario não vai ver-->
+        <input type="hidden" name="country" value="br">
+        
+        <!-- Cria um input de pesquisa-->
+        <input type="search"> <br>
+    
+        <input class="input333" type="text" name="place" placeholder="Digite seu usuário"> <br> <br> 
+    </body>
+
+</html>

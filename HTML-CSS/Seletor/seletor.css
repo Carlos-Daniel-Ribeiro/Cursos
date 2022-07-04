@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+/* 
+É possível selecionar somente o elemento 
+de uma string, usando "[]".
+*/
+[required] {
+    background-color: rgb(255, 127, 127);
+}
+/* 
+É possível selecionar um elemento vazio, usando ":empty".
+*/
+div:empty {
+    background-color: red;
+    height: 200px;
+}
+/* 
+É possível selecionar um elemento em especifico dentro
+de um grupo de elementos, usando ":nth-child()".
+*/
+div:nth-child(6) {
+    background-color:yellow ;
+}
+/* 
+A tag spam é usada para conseguir estilizar
+alguma string ou qualquer coisa em especifico,
+pois ela não possui nenhum atributo por natureza.
+É possível selecionar um elemento em especifico dentro
+*/
+span {
+    font-size: 30px;
+    font-weight: bold;
+}
+/* 
+A tag "rgba() serve para alterar cores e também
+colocar transparência."
+*/
+#div1 {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(255, 0, 0, 0.7)
+}
+/* 
+A tag "transform: scale();" serve para alterar tamanho de 
+objetos sem alterar seu tamanho real."
+*/
+#div2 {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(217, 255, 0, 0.7);
+    transform: scale(2);
+}
+/* 
+A tag "transform: rotate();" serve girar um elemento
+e deve ser usado "deg".
+*/
+#div3 {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(255, 0, 179, 0.7);
+    transform: rotate(30deg);
+}

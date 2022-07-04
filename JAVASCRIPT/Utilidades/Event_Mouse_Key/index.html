@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    // -----------------------------------MOUSE--------------------------------------
+    // Esse comando "onclick="clique()"" faz com que ocorra um evento de clique
+    //que pode executar uma função
+    <button onclick="clique()">CLIQUE EM MIM</button>
+
+    // Esse comando "onmouseover="clique1()"" faz com que ocorra um evento quando 
+    //o mouse passsar em cima do objeto
+    <button onmouseover="clique1()">PASSE O MOUSE SOBRE MIM</button>
+
+    // Esse comando "onmouseout="clique2()"" faz com que ocorra um evento quando 
+    //o mouse sair de cima do objeto
+    <button onmouseout="clique2()">TIRE O MOUSE DE MIM</button>
+
+    // -----------------------------------TECLADO------------------------------------
+    // Esse comando "onkeydown="clique1()"" faz com que ocorra um evento quando 
+    //uma determinada for clicada ou qualquer tecla
+    <button onkeydown="event1()">DIGITOU</button>
+
+    // Esse comando "onkeypress="clique2()"" faz com que ocorra um evento quando 
+    //uma determinada for clicada ou qualquer tecla
+    <button onkeypress="event2()">DIGITOU</button>
+
+    // Esse comando "onkeyup="clique3()"" faz com que ocorra um evento quando 
+    //uma determinada for clicada e soltada
+    <button onkeyup="event3()">SOLTOU A TECLA</button>
+
+    // Esse parâmetro "event" recebe o valor do proprio input, ou seja
+    //recebe o valor da tecla que foi apertada e soltada
+    <input onkeyup="tecla(event)" type="text" name="password">
+
+    <script src="script.js"></script>
+</body>
+</html>

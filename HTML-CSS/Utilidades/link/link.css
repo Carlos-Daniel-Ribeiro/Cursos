@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+.teste {
+    margin-top: 1000px;
+}
+.link {
+    color: green;
+}
+.link:hover {
+    color: red;
+}
+.link:visited {
+    color: purple;
+}

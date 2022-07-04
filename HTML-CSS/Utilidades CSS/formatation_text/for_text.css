@@ -1,0 +1,51 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+
+/*
+    Tag "color" colocar cor no texto, tag "font-size" aumenta ou diminui a fonte do texto,
+    tag "font-weight" colocar negrito ou padrão o texto, tag "font-family" troca a fonte do texto, 
+    tag "text-align" centraliza o texto, tag "text-decoration tira efeito padrão do texto"
+*/
+p::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+}
+p::first-line {
+    background-color: aquamarine;
+}
+p {
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+}
+
+/*
+    Tag "text-transform" coloca o texto em caps ou nocaps, 
+    tag "letter-spacing" aumenta ou diminui o espaçamento das letras,
+    tag "word-spacing" aumenta ou diminui o espaçamento das palavras, 
+    tag "line-height" aumenta ou diminui o espaçamento das linhas do texto"
+*/
+
+.text2 {
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    line-height: 50px;
+}
+p::first-letter {
+    font-size: 20px;
+    font-weight: bold;
+}
+p::first-line {
+    background-color: aquamarine;
+}

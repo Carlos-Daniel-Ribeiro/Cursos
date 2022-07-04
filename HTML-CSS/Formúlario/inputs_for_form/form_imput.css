@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin-left: 20px;
+}
+form {
+    font: bold;
+}
+input {
+    padding: 5px;
+    margin-top: 20px;
+}
+/*
+Use "::placeholder" para conseguir modificar
+o placeholder de um input.
+*/
+.input333 {
+    height: 100px;
+    width: 300px;
+    background-color: antiquewhite;
+}
+.input333::placeholder {
+    color: aqua;
+}

@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* A tag "display: flex;" coloca a funcionalidade FLEXBOX na div ou elemento HTML */
+.container1 {
+    background-color: rgb(139, 139, 139);
+    display: flex;
+    margin: 10px; 
+}
+.div1 {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* A tag " flex-direction: ;" coloca uma direção no elemento FLEXBOX,
+a tag "flex-direction: column;" coloca as divs dentro do container em colunas 
+e a tag "flex-direction: column-reverse" as coloca em colunas, mas em forma reversa*/
+.container11 {
+    background-color: rgb(139, 139, 139);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.div11 {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* A tag "flex-direction: row" coloca as divs dentro do container em linhas 
+e a tag "flex-direction: row-reverse" as coloca em linhas, mas em forma reversa*/
+.div111 {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.container111 {
+    background-color: rgb(139, 139, 139);
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* A tag "flex: 1;" indica que todas as divs com o mesmo flex numeral fazem parte de um grupo
+e que sera dividido igualmente o espaço livre do container, entre as divs com o mesmo flex numeral */
+.div11111 {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    flex: 1;
+}
+.div22222 {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    flex: 1;
+}
+.container11111 {
+    background-color: rgb(139, 139, 139);
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+/* A tag "flex: 1;" indica que todas as divs com o mesmo flex numeral fazem parte de um grupo
+e que sera dividido igualmente o espaço livre do container, entre as divs com o mesmo flex numeral e
+caso possua um flex:2 ou maior no mesmo container esse flex tera o dobro ou mais do espaço do flex:1 */
+.div111111 {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    flex: 1;
+}
+.div222222 {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    flex: 1;
+}
+.div333333 {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    flex: 2;
+}
+.container111111 {
+    background-color: rgb(139, 139, 139);
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+/* ------------------------------------------------------------------------ */
+
+/* A tag "flex-wrap: wrap;" fara com que o container pule a linha caso o tamanho das
+divs ultrapasse o tamanho da tela, e a tag "flex-wrap: nowrap;" faz com que ele reduza as 
+divs para que todas caibam na mesma linha */
+.container0 {
+    background-color: rgb(139, 139, 139);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.div0 {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    width: 200px;
+}
+
+/* A tag "flex-flow:;" faz o que a tag flex-direction: e flex-wrap: fazem
+so que no mesmo comando, a tag "justify-content:" alinha as divs em linha no container e
+a tag "align-items:" faz com que alinhe em colunas as divs do container. */
+.container00 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(139, 139, 139);
+    margin: 10px;
+    margin-bottom: 50px;
+    height: 500px;
+}
+.div00 {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+}
+/* ------------------------------------------------------------------------ */
+  
+
+

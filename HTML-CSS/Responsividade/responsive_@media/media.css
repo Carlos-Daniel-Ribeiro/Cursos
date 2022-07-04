@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    flex-direction: flex;
+    background-color: black;
+    color: white;
+}
+
+/*
+    Para adptar um elemento com css, com condições
+    deve se usar "@media (...) {}", para colocar condiçoes apenas para impressão
+    "@media only print (...) {}".
+*/
+@media (min-width: 1001px) {
+
+    body {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+    h1 {
+        font-size: 15px;
+        
+    }
+    
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+
+    body {
+        background-color: rgb(209, 209, 209);
+        color: black;
+    }
+    h1 {
+        font-size: 55px;
+    }
+}
+@media only print {
+
+    h1 {
+        font-size: 60px;
+        font: bold;
+        text-align: center;
+        color: black;
+    }
+}
+div {
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+/*
+    Usando "@media (orientation: landscape/portrait) {}" o site vai se
+    adequar se estiver com o celular em pé ou deitado, ele é baseado no espaço da tela
+    e não consegue detectar se está deitado ou em pé.
+*/
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+        color: black;
+    }
+    
+
+}
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+        color: black;
+    }
+}

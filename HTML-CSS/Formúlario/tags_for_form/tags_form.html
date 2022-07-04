@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="elements.css">
+</head>
+<body>
+
+    <!-- Cria um botão de envio -->
+    <button>Concluir cadastro</button><br><br>
+
+    <!-- Cria uma seleção (alternativa) e o usuario escolhe entre uma opção -->
+    Escolha apenas uma opção : <br>
+    <select name="order" id="">
+        <option value="bestseller">mais vendidos</option>
+        <option value="last" selected>recentes</option>
+        <option value="better">melhores</option>
+    </select><br>
+        
+    <!-- Cria uma seleção (multipla escolha) o usario escolhe algumas opções -->
+    Escolha apenas uma ou mais opções : <br>
+    <select name="order1" id="" size="2" multiple>
+        <option value="bestseller">2 livros</option>
+        <option value="last" selected>2 jogos</option>
+        <option value="better">2 musicas</option>
+    </select><br>
+        
+    <!--Cria uma area de digitação maior (geralmente usada como descrição)-->
+    Digite a descrição : <br>
+    <textarea name="descricao" style="resize: none"></textarea><br>
+
+    <!-- A tag "label" faz com que o texto seja interativo com o conteudo. -->
+    <label>
+        Nome da mãe :
+        <input type="text">
+    </label><br>
+
+    <form action="" method="">
+
+        <!-- A tag "fieldset" serve para separar informações em blocos e
+        a tag "legend" coloca uma legenda nesse bloco.-->
+       <fieldset>
+           <legend>Dados Pessoais</legend>
+            Digite seu nome :<br>
+           <input type="text"><br>
+       </fieldset><br>
+    </form>
+   
+    
+</body>
+</html>           

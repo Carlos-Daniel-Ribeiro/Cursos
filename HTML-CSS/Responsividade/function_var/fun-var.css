@@ -1,0 +1,30 @@
+/*
+uma variavel só funciona onde ela foi criada, para 
+usa-la em todo o doc, use no CSS ":root{...}", crie as dentro dele.
+Para criar uma variavel, use "--qualquercoisa:", para usa-la use "var(--qualquercoisa);".
+*/
+:root {
+    --bg-color: rgb(0, 0, 0);
+    --bg-second: rgb(167, 167, 167);
+    --font-color: rgb(255, 255, 255);
+    --font-size: 25px;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    background-color: var(--bg-color);
+    font-size: var(--font-size);
+}
+
+.tap1 {
+    background-color: var(--bg-second);
+    color: var(--font-color);
+}
+
+h1 {
+    color: var(--font-color)
+    
+}

@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+/*
+O Grid funciona como o flexbox, serve para criar estruturas
+de retrato e afins, use a tag "display-grid" dentro de um container.
+*/
+/*
+A tag "grid-template-columns:" adiciona colunas no grid, e a tag 
+"grid-template-columns: repeat()" adiciona as colunas em tamanhos iguais.
+*/
+/*
+A tag "gap" adiciona um gape entre os elementos do grid ou seja
+um espaço.
+*/
+/*
+A tag "fr" é uma fração da tela, se for 1 fr e 3 colunas elas terão
+o espaço de tela fracionado e dividido.
+*/
+/*
+A tag "repeat" repeti uma sessão de comando que contenha colunas e frações.
+*/
+
+.container {
+    border: 1px black solid;
+    display: grid;
+    margin: 30px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax( 100px, auto);
+    width: 500px;
+    gap: 10px 30px;
+}
+.item {
+    background-color: blueviolet;
+    border-radius: 10px ;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 20px;
+}
+/*
+Para posicionar grids, temos que pensar que existem linhas imgainaris no grid
+e definimos a coluna da grid "grid-column-start:;grid-column-end:;", e sua linha
+usamos "grid-row-start:;grid-row-end:;".
+*/
+.item1 {
+    background-color: blueviolet;
+    border-radius: 10px ;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item5 {
+    background-color: blueviolet;
+    border-radius: 10px ;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+.item7 {
+    background-color: green;
+    border-radius: 10px ;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.item9 {
+    background-color: red;
+    border-radius: 10px ;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+
+.container1 {
+    border: 1px black solid;
+    display: grid;
+    margin: 30px;
+    grid-template-areas: 
+        "item11 item11 item11 item11" 
+        "item22 item33 item33 item33" 
+        "item44 item44 item44 item44"
+        "item55 item55 item55 item55"
+    ;
+    width: 500px;
+    gap: 10px 30px;
+}
+.item11 {
+    background-color: yellow;
+    border-radius: 10px ;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    grid-area: item11;
+}
+.item22 {
+    background-color: yellow;
+    border-radius: 10px ;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    grid-area: item22;
+}
+.item33 {
+    background-color: yellow;
+    border-radius: 10px ;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    grid-area: item33;
+}
+.item44 {
+    background-color: yellow;
+    border-radius: 10px ;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    grid-area: item44;
+}
+.item55 {
+    background-color: yellow;
+    border-radius: 10px ;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    grid-area: item55;
+}
+@media (max-width: 750px) {
+    .container1 {
+        grid-template-areas: 
+            "item11 item11 item11 item22" 
+            "item33 item33 item33 item33" 
+            "item44 item44 item44 item44"
+            "item55 item55 item55 item55"
+        ;
+    }
+}
+
+

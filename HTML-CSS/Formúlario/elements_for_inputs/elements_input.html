@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="element.css">
+</head>
+    <body>
+
+        <!-- Elemento comum. -->
+        Nome do usuario :<br>
+        <input type="text" name="usuario"><br>
+
+        <!-- O elemento "placeholder" deixa uma escrita interna na caixa de texto.-->
+        Nome do usuario :<br>
+        <input type="text" name="usuario" placeholder="Digite seu nome"><br>
+
+        <!-- O elemento "minlength="2" maxlength="50"" limita a quantidade de letras
+        que podem ser escritas em uma caixa de texto.-->
+        Nome do usuario :<br>
+        <input type="text" name="usuario" minlength="2" maxlength="50"><br>
+
+        <!-- O elemento "required" obriga que aquele campo seja preenchido. -->
+        Nome do usuario :<br>
+        <input type="text" name="usuario" required><br>
+
+        <!-- O elemento "autofocus" inicio com a caixa de texto selecionada ao entrar na pagina. -->
+        Nome do usuario :<br>
+        <input type="text" name="usuario" autofocus><br>
+
+        <!-- O elemento "autocomplete" faz com que o navegador salve ou não a ultima
+        informação digitada nele. -->
+        <input type="email" autocomplete="on">
+
+        <!-- O elemento "step" pula de numero em numero. -->
+        Coloque seu RGM : <br>
+        <input type="number" name="nome4" step="3"><br>
+
+        <!-- O elemento "min,max" limita um determinado numero. -->
+        Coloque sua idade : <br>
+        <input type="number" name="nome5" min="18" max="60">
+
+        <!-- O elemento "min,max" limita um determinado numero e serve para data. -->
+        Coloque sua data de nascimento : <br>
+        <input type="date" name="nome6" min="2004-01-01">
+
+    </body>
+</html>

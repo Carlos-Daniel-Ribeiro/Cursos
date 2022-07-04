@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="semantica_css.css">
+    <meta name="author" content="CarlosDaniel"> 
+    <meta name="description" content="Essa é a minha descrição"> 
+    <meta name="keywords" content="Html,CSS,Js"> 
+</head>
+<body>
+
+        <!-- Semantica para cabeçalho de uma pagina -->
+        <header>
+            <h1>Titulo da pagina</h1>
+            <p>Subtitulo</p>
+        </header>
+
+        <!-- Semantica para o menu do site de uma pagina -->
+        <nav>
+            <h2>O poema</h2>
+            <p>Tete</p>
+            <p>Pipi</p>
+            <P>Titi</P>
+            <a href=""></a>
+            <img src="" alt="">
+        </nav>
+
+        <!-- Semantica para rodapé de uma pagina -->
+        <footer>
+            <input type="checkbox"> Aceita os termos de uso
+        </footer>
+    
+        <!----------------------------------------------------------------------------------->
+
+        <!-- Semantica para separar conteúdo da pagina -->
+        <section>
+            <p>Assuntos</p>
+        </section>
+
+        <!-- Semantica para mostrar o conteudo principal da sua pagina -->
+        <article>
+            <p>Assunto principal</p>
+        </article>
+
+        <!-- Semantica para mostrar o conteudo coadjuvante da sua pagina -->
+        <aside>
+            <p>Assunto secundário</p>
+        </aside>
+
+        <!-- Serve definir uma hora ou tempo, de um determinado texto que contenha
+        alguma menção a algum tempo, isso dá semantica. -->
+        <h1>O meu dia favorito é o <time datetime="2002-09-11">dia do meu aniversário</time></h1> 
+
+        <!----------------------------------------------------------------------------------->
+
+    <!----------------------------------------------------------------------------------->
+
+    <!-- Use para semantica, para listas com descrição use a tag "dl", e "dt" para inserir um
+    item principal e "dd" para descrever esse item principal. 
+    Pode utilizar imagens e listas dentro dele.-->
+    <dl>
+        <dt>Café</dt>
+        <dd>Liquido quente preto e saboroso.</dd>
+        <dt>Margarina</dt>
+        <dd>Amarelo e pastoso</dd>
+    </dl>
+
+    <!-- Use para semantica, para citações que serão pequenas e ficarão
+    na mesma linha e tambem utilizadas aspas, use a tag "q".-->
+    <p>Como dizia Gandalf : <q>A verdadeira coragem não está em saber quando tirar 
+        uma vida, mas, sim, em quando poupar uma.</q></p>
+    
+    <!-- Use para semantica, para citações que serão grandes e não ficarão
+    na mesma linha e tambem utilizadas aspas, use a tag "blockquote" e 
+    para citar o link use a tag "cite".-->
+    <p>Como dizia Gandalf: 
+        <blockquote cite="https://www.pensador.com/frases_gandalf/">
+            Muitos que vivem merecem a morte. E alguns que morrem merecem viver. 
+            Você pode dar-lhes vida? Então não seja tão ávido para julgar e condenar alguém à morte.
+        </blockquote> 
+    </p>
+    <!----------------------------------------------------------------------------------->
+    
+    <!-- A tag "main" é utilizada para definir um conteudo principal da pagina
+    , so pode ser utilizada uma vez e só pode ser descendente da tag "section"-->
+    <main>
+        <section>
+            Blablabla
+        </section>
+    </main>
+
+    <!-- A tag "address" é utilizada para definir um conteudo relativo a endereço, 
+    telefone, email ... geralmente usada em rodá-pé.-->
+    <address>
+        telefone : 11223322
+        email : carlositu33@gmail.com
+        endereço : Rua lalala n-77
+    </address>
+
+    
+
+
+
+
+</body>
+</html>

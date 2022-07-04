@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+/*
+    A tag "border-radius" arredonda a borda
+    de um determinado elemento. 
+*/
+.div1 {
+    background-color: green;
+    margin: 100px;
+    height: 300px;
+    width: 300px;
+    border-radius: 180px;
+    text-align: center;
+}
+/*
+    Para colocar um background degrade, use a tag "background: linear-gradient(0deg)
+    , para adicionar proteçôes use as tags :
+    background: -moz-linear-gradient();
+    background: -o-linear-gradient();
+    background: -webkit-gradient();.
+*/
+.div-exe {
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+    background: linear-gradient(45deg,black, gray);
+    background: -moz-linear-gradient(black, gray);
+    background: -o-linear-gradient(black, gray);
+    background: -webkit-gradient(black, gray);
+}
+/*
+    Para colocar uma sombra use a tag "box-shadow", o primeiro valor é qual lado a sombra
+    vai, se for negativo vai para a esquerda, o segundo se for negativo vai para cima, o terceiro
+    é o nivel de blor e o ultimo é a cor.
+*/
+.div-exe1 {
+    height: 500px;
+    width: 500px;
+    background-color: red;
+    box-shadow: 10px 10px 5px darkred;
+    margin-left: 600px;
+    margin-bottom: 600px;
+}
+/*
+    Para colocar uma transição, adicione um "hover" e adicione no css
+    index a tag "transition:all s() linear;".
+*/
+.div-exe2 {
+    height: 500px;
+    width: 500px;
+    background-color: yellow;
+    box-shadow: 10px 10px 5px darkgoldenrod;
+    margin-left: 600px;
+    margin-bottom: 600px;
+    transition:all 1s linear ;
+}
+.div-exe2:hover {
+    height: 500px;
+    width: 1000px;
+    background-color: yellow;
+    box-shadow: 10px 10px 5px darkgoldenrod;
+    margin-left: 600px;
+    margin-bottom: 600px;
+}
+/*
+    Caso um texto estore o limite da div na horizontal, use a tag "word-wrap: break-word;"
+    e caso estourar embaixo, use a tag "overflow:scroll;".
+*/
+.word {
+    height: 500px;
+    width: 150px;
+    border: solid black;
+    word-wrap: break-word;
+    overflow: scroll;
+}
