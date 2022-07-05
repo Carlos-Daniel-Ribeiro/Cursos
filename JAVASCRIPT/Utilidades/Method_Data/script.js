@@ -1,5 +1,5 @@
 // -----------------------------------------------DATA DEFINITION---------------------------------------------------
-/*
+
 // A função "new Date()" cria automaticamente um objeto que corresponde a data atual do momento em que aquela variavel
 //foi criada
 let data = new Date();
@@ -29,7 +29,7 @@ console.log(data3_1)
 
 // Apenas outra maneira de definir os parâmetros
 let data4 = new Date("2002-8-11 11:45:30");
-console.log(data4) */
+console.log(data4) 
 
 // -----------------------------------------------DATA MANIPULATION---------------------------------------------------
 
@@ -40,9 +40,10 @@ let novoValor0 = data5.getMonth(); // MÊS
 let novoValor1 = data5.getDay(); // DIA DA SEMANA
 let novoValor2 = data5.getDate(); // DIA
 let novoValor3 = data5.getHours(); // HORAS
-let novoValor4 = data5.getSeconds(); // SEGUNDOS
-let novoValor5 = data5.getMilliseconds(); // MILISEGUNDOS
-let novoValor6 = data5.getTime(); // TIME STAMP, NUMERO DE MILLISEGUNDOS APÓS 1970
+let novoValor4 = data5.getMinutes(); //MINUTOS
+let novoValor5 = data5.getSeconds(); // SEGUNDOS
+let novoValor6 = data5.getMilliseconds(); // MILISEGUNDOS
+let novoValor7 = data5.getTime(); // TIME STAMP, NUMERO DE MILLISEGUNDOS APÓS 1970
 console.log(novoValor);
 console.log(novoValor1);
 console.log(novoValor2);
@@ -50,3 +51,24 @@ console.log(novoValor3);
 console.log(novoValor4);
 console.log(novoValor5);
 console.log(novoValor6);
+
+//As funçoes após "data5. ..." setam o momento especifico da data já criada
+//É possivel fazer sobretração e soma dentro dos parâmetros tbm
+let data6 = new Date();
+let novoValor11 = data6.setFullYear(2030); // ANO
+let novoValor12 = data6.setMonth(11); // MÊS
+let novoValor13 = data6.setDay(6); // DIA DA SEMANA
+let novoValor14 = data6.setDate(15); // DIA
+let novoValor15 = data6.setHours(8); // HORAS
+let novoValor16 = data5.setMinutes(30); //MINUTOS
+let novoValor17 = data6.setSeconds(45); // SEGUNDOS
+let novoValor18 = data6.setMilliseconds(900); // MILISEGUNDOS
+let novoValor19 = data6.setdate( data6 - 3); // TIME STAMP, NUMERO DE MILLISEGUNDOS APÓS 1970
+console.log(novoValor11);
+console.log(novoValor12);
+console.log(novoValor13);
+console.log(novoValor14);
+console.log(novoValor15);
+console.log(novoValor16);
+console.log(novoValor17);
+console.log(novoValor18);
