@@ -28,3 +28,7 @@ console.log(valor5)
 // Maneira efetiva de usar o "random"
 let valor6 = Math.floor(Math.random() * 100);
 console.log(valor6)
+
+// A função "Math.abs(-8584742)", vai retornar o numero absoluto ou seja o "positivo"
+let valor7 = Math.abs(-8584742)
+console.log(valor7)
