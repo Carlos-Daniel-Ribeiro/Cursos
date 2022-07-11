@@ -58,25 +58,3 @@ let peso = 100;
 
 console.log(`Meu nome é ${nome}, e tenho ${idade} anos 
 e meu peso atualmente é ${peso} Kg.`)
-
-// ------------------------------------------ DESCONTRUCTION -------------------------
-
-
-// Metodo de descontrução de objeto, defina uma variavel dessa maneira "let { nome1, idade1:idade2 } = pessoa;"
-//ela ira desconstruir "pessoa" que é um objeto e automaticamente criar as variaveis que estão dentro do "{}"
-// E se quiser pegar o valor da variavel so que com o nome de variavel diferente faça "idade1:idade2"
-// E caso uma das variaveis não possua valor, ou não esteja definida use " nome1 = 'sem nome'" e automaticamente 
-//recebera o valor apos o "="
-let pessoa = {
-    nome1: "Daniel",
-    idade1: "20",
-    social: {
-        instagram: dani99,
-        facebook: dani88
-    },
-    infor: function() {
-        return `Meu nome é ${this.nome1}, minha idade ${this.idade1}`
-    } 
-};
-let { nome1 = 'sem nome', idade1:idade2 } = pessoa;
-console.log(nome1, idade2);
