@@ -60,6 +60,18 @@ let nome10 = "Carlos Daniel Costa Ribeiro";
 let resultado10 = nome10.split(" ");
 console.log(resultado10);
 
+// O comando "nomeX.repeat(10)" repeti uma determinada String
+let nomeX = "Carlos Daniel Costa Ribeiro";
+let resultadoX = nomeX.repeat(10);
+console.log(resultadoX);
+
+// O comando "numero.padStart(11, "-")" vai completar a string com o segundo elemento do parâmtro,
+//o pad end vai completar apos a string e o start antes da string
+// O primeiro parâmetro é quantidade de letras requiridas e o segundo o elemento que ira completar a string
+let numero = "1195481"
+console.log(numero.padEnd(11, "-"));
+console.log(numero.padStart(11, "-"));
+
 
 
 

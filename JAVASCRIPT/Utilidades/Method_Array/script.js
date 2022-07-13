@@ -62,6 +62,12 @@ lista9.sort()
 lista9.reverse()
 console.log (lista9); 
 
+// Essa função "listaX.includes("caju")" verifica se existe um determinado
+//elemento dentro do array, caso sim retorna "true" e caso não "false"
+let listaX = ["caju","bola","madeira"];
+let x = listaX.includes("caju")
+console.log (x); 
+
 // -----------------------------------------------ARRAY ADVANCED------------------------------------------------------
 
 // O "map" é utilizado para executar uma função matematica (na maioria das vezes), em cada valor
