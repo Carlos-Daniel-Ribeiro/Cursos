@@ -1,7 +1,7 @@
 /* 
 ---------------------------------------------- CONFIGURAÇÕES ----------------------------------------------
 
-git config --global user.name "Digite seu nome"  CONFIGURA O NOME DO USUÁRIO NO GIT
+git config --global user.name "Carlos Daniel"  CONFIGURA O NOME DO USUÁRIO NO GIT
 
 git config --global user.email Digite seu email  CONFIGURA O EMAIL DO USUÁRIO GIT
 
