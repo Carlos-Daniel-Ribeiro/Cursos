@@ -2,7 +2,7 @@
 
 //Meio de comunicação para realizar requisições entre sistemas
 
-// Muito semalhante à um Objeto : 
+// Muito semelhante à um Objeto : 
 
 /*
 {
@@ -33,3 +33,14 @@ let request1 = {
 }
 let request_true1 = JSON.stringify(request1);
 console.log(request_true1);
+
+// ------------------------------------------ ASSINCRONO E SINCRONO ---------------------------------------
+
+// Codigo sincrono, é um codigo que é executavel em sincronia, ou seja, cada linha
+//funciona após a outra, e espera a resposta da linha antecedente para funcionar.
+
+// Código assincrono, não segue uma sincronia, ele executa funções e realiza callbacks,
+//antes de uma linha antecedente finalizar sua tarefa.
+
+// Callbacks, são ações que não acontecem no momento exato em que são ativadas,
+//geralmente esperam uma resposta, ou já estão programadas para executar após algum tempo
